@@ -15,11 +15,7 @@ module.exports = {
 
         "dialect": "mysql",
 
-        dialectOptions: {
-            socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
-            supportBigNumbers: true,
-            bigNumberStrings: true
-          },
+        
 
     },
     

@@ -34,7 +34,7 @@ const resolvers = {
 
         async fetchUser(_, { id }) {
 
-            return await User.findById(id);
+            return await User.findOne({ where: {id} });
 
         },
 
@@ -223,9 +223,9 @@ const resolvers = {
     
            // Assign tags to post
     
-           await post.setTags(tags);
+            await post.setTags(tags);
     
-               return post;
+            return post;
     
         },
     

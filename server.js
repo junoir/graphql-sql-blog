@@ -10,7 +10,7 @@ const schema = require('./data/schema');
 const jwt = require('express-jwt');
 require('dotenv').config();
 
-const PORT = 4002;
+const PORT = 8080;
 // Create our express app
 
 const app = express();
@@ -29,7 +29,7 @@ app.use('/api', bodyParser.json(), jwt({
     
            context: {
     
-          authUser: req.user
+           authUser: req.user
     
            }
     
